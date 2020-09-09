@@ -1,0 +1,388 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.backgroung{
+	width: 100%;
+	background: #171717;
+	margin: 0 auto;
+}
+
+
+html{scroll-behavior: smooth;}
+
+body{
+	font-family: sans-serif;
+}
+
+@font-face{
+	src: url( ../font/POPSTAR.TTF);
+	font-family: kda;
+}
+
+button{cursor: pointer;}
+a{cursor: pointer;}
+
+.clear{
+	clear: both;
+}
+
+.header{
+	width: 100%;
+	height: 100px;
+	background: #9EA7F1;
+}
+
+.video{
+	width:  100%;
+}
+#myVideo {
+  float: left;
+right: 0;
+  bottom: 0;
+  min-width: 100%;
+	min-height: 200px;}
+.baologo{
+	float: left;
+	width: 10%;
+
+}
+.logo img{
+	margin-left: 40px;
+	margin-top: 25px;
+	width: 150px;
+}
+.menu{
+	width: 80%;
+	float: right;
+	margin-top: 60px;
+}
+.menu ul  {
+	list-style-type: none;
+}
+.menu a{
+	text-decoration: none;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#b7daf3,#9898f2 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-size: 20px;
+	font-family: sans-serif;
+	
+}
+.menu li{
+	float: right;
+	padding-right: 6em;
+	margin-right: 100px;
+}
+.menu button {
+	width: 150px;
+	height: 50px;
+	background: none;
+	border-radius: 30px;
+	margin-top: -50px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 15px;
+    border: rgba(255,255,255,1.00) solid 1px;
+}
+
+.content{
+	position: fixed;
+	width: 100%;
+	background: #000000;
+	opacity: 0.8;
+	z-index: 465465165165464646;
+}
+.body{
+	width: 1820px;
+	height: auto;
+	background: #B1F9D4;}
+
+#team{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,1.00);
+	position: relative;
+}
+
+
+
+.char{
+	position: absolute;
+	transition: 0.5s;
+}
+
+
+.ev{
+	left: 80px;
+	bottom: 200px;
+	width: 320px;
+}
+
+.ks{
+	left: 520px;
+	bottom: 190px;
+	width: 300px;
+}
+
+.ah{
+	right: 540px;
+	bottom: 200px;
+	width: 290px;
+}
+
+.ak{
+	right: 100px;
+	bottom: 200px;
+	width: 250px;
+}
+
+.ak:hover, .ah:hover , .ks:hover , .ev:hover{
+	transform: scale(1.2);
+}
+
+.name{color: aliceblue; position: absolute; font-family: kda; font-size: 1.5em;}
+.name h1{ font-family: kda;}
+
+.akname{
+	right: 175px;
+	bottom: 250px;
+	animation: KDA 3s linear infinite;
+}
+
+.evname{
+	left: 125px;
+	bottom: 250px;
+	animation: KDA1 3s linear infinite;
+}
+
+.ahname{
+	right: 700px;
+	bottom: 310px;
+	animation: KDA1 3s linear infinite;
+}
+
+.ksname{
+	left: 670px;
+    bottom: 310px;
+	animation: KDA 3s linear infinite;
+}
+
+@keyframes KDA{
+	0%{transform: translateY(0px)}
+	50%{transform: translateY(30px)}
+	100%{transform: translateY(0px)}
+}
+
+@keyframes KDA1{
+	0%{transform: translateY(30px)}
+	50%{transform: translateY(0px)}
+	100%{transform: translateY(30px)}
+}
+	
+#banner{
+	width: 100%;
+	height: 270vh;
+	background: #262626;
+	position: relative;
+}
+
+.banner{
+	position: absolute;
+	width: 50em;
+}
+
+
+.ahbanner{
+	top: 150px;
+	left: 100px;
+}
+
+.evbanner{
+	right: 100px;
+	top: 800px;
+}
+
+.ksbanner{
+	top: 1450px;
+	left: 100px;
+}
+
+.akbanner{
+	right: 100px;
+	bottom:60px;
+}
+
+.textkda{
+	color: aliceblue;
+	font-size: 1.2em;
+}
+
+.textkda{
+	width: 700px;
+	position: absolute;
+	border: #FFFFFF solid 2px;
+	padding: 30px;
+}
+
+.ahtext{
+	right: 150px;
+	top: 250px;
+	line-height: 30px;
+}
+
+.evtext{
+	left: 150px;
+	top: 900px;
+	line-height: 30px;
+}
+
+.kstext{
+	right: 150px;
+    bottom: 800px;
+	line-height: 30px;
+}
+
+.aktext{
+	left: 150px;
+	bottom: 150px;
+	line-height: 30px;
+}
+
+
+/*backtotop*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: -webkit-linear-gradient(#b7daf3,#9898f2 );
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+#footer{
+	width: 100%;
+	height: 500px;
+	background: #000000;
+}
+
+#thongtin{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#thongtin ul{
+ list-style-type: none;
+}
+#thongtin ul li {
+	float: left;
+	padding: 50px 30px 20px 30px;
+}
+
+#thongtin ul li a{
+	font-weight: bold;
+	color:#BDBDBD;
+	text-decoration: none;
+}
+
+#iconthongtin{
+	width: 100%;
+	height: 50px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon{
+	float: left;
+	color: aliceblue;
+	font-size: 2.5em;
+	margin-left: 30px;
+	margin-right: 30px;
+	transition: 0.25s;
+}
+
+.icon:hover{
+	background: -webkit-linear-gradient(#b7daf3,#9898f2 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	transform:scale(1.3);
+}
+
+#textnho{
+	width: 100%;
+	margin-top: 30px;
+}
+
+#textnho p{
+	color:#BDBDBD;
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 20px;
+}
+
+#thongtingachchan{
+	width: 100%;
+    margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#thongtingachchan a{
+	margin-left: 25px;
+	margin-right: 25px;
+	color: aliceblue;
+}
+
+#end{
+	width: 100%;
+    height: 300px;
+	background: #000000;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#khungbao
+{
+	width: 22%;
+	height: 150px;
+}
+
+#leftend{
+	width: 130px;
+	height: 150px;
+	background: url(../tainguyen/na-esrb.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#rightend{
+	float: left;
+}
+
+#rightend p{
+	color: aliceblue;
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 30px;
+}
+
